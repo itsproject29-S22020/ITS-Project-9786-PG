@@ -9,6 +9,8 @@
 # Charmane Foo - u3201698
 # Matt Lally - u3167761
 # Lakmal Attanayake - u3177896
+#################
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
