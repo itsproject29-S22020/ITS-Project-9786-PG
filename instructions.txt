@@ -22,5 +22,4 @@ Load the two separate folders of train & test sets into the googlenet trial for 
 alexnet_pytorch_trial -> Develop an algorithm that loads the pre-trained AlexNet model from PyTorch and classifies the images on two classes 0 and 1. However, the two major errors  found which were SSL Error and Epoch hangup were discussed in the report.
 pretrained full -> Develop an algorithm that loads the pretrained model (in this example, ResNet50 was used) and classifies the images on two classes 0 and 1. However, CUDA Runtime Error was found when running on a GPU. Research for solutions on these errors were from this site: https://github.com/pytorch/pytorch/issues/21819#event-2418764283
 createDataset.py -> Create a custom dataset of images. This file was supposed to load the frame images and the label csv file efficiently as a custom dataset in Pytorch
-loaddata_csv.py -> Create a csv file that lists the name of the frame images (eg 1_125.jpg) and its corresponding class of 0 or 1 depending on the subject
 
