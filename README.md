@@ -1,7 +1,9 @@
 # ITS-Project-9786-PG
 Depression Analysis of Facial Video Data using Deep Learning
+
 Unit 9786 PG: ITS Capstone Project - University of Canberra
-Its project 29-S2: Depression Analysis from Facial Video Data via Deep Learning
+
+ITS project 29-S2: Depression Analysis from Facial Video Data via Deep Learning
 
 Date submitted: 6 NOV 2020
 
