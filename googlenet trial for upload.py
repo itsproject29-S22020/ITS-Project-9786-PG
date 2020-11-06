@@ -1,6 +1,14 @@
 
-
+### UNIT 9786 PG: ITS CAPSTONE PROJECT - UNIVERSITY OF CANBERRA
+### ITS PROJECT 29-S2: Depression Analysis from Facial Video Data via Deep Learning
+#code from:
 # https://github.com/aladdinpersson/Machine-Learning-Collection/blob/aba36b89b438ca8f608a186f4d61d1b60c7f24e0/ML/Pytorch/Basics/custom_dataset/custom_dataset.py#L12-L29
+#amended by:
+### PROJECT TEAM MEMBERS:
+# Hang Hoang - u3197442
+# Charmane Foo - u3201698
+# Matt Lally - u3167761
+# Lakmal Attanayake - u3177896
 import torch
 import torch.nn as nn
 import torch.optim as optim
