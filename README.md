@@ -20,5 +20,9 @@ This repository contains code for depression analysis of facial video data using
 Turn video files into images, using Haar cascades face detection crop faces from images. Run the images through a pre-trained GoogLeNet. 
 
 Specifications:
-Python 3.7
+Python version 3.7
 torch version 1.6
+OS: Windows-10-10.0.19041-SP0
+Command: 
+CPU: conda install pytorch torchvision torchaudio cpuonly -c pytorch
+GPU: conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
