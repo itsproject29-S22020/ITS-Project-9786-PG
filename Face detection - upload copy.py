@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Sep  6 10:32:59 2020
+### UNIT 9786 PG: ITS CAPSTONE PROJECT - UNIVERSITY OF CANBERRA
+### ITS PROJECT 29-S2: Depression Analysis from Facial Video Data via Deep Learning
+### PROJECT TEAM MEMBERS:
+# Hang Hoang - u3197442
+# Charmane Foo - u3201698
+# Matt Lally - u3167761
+# Lakmal Attanayake - u3177896
 
-@author: Matt Lally
-"""
 import cv2
 import glob
 import os
