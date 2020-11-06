@@ -1,0 +1,17 @@
+Step 1:
+
+video_frame_extraction.py enables you to extract subclips from video folders. 
+Use with times.txt file. 
+
+Edit filepaths in code to appropriate file paths. 
+Edit video timestamps to subclip files from in seconds
+E.g. to subclip video from 00:00:00 to 00:00:15: 
+subclipTimes.write("0-10") -> subclipTimes.write("0-15")
+
+Step 2:
+
+Face detection - upload copy.py enables you to detect and crop faces from multiple frames in a folder. 
+Use with haarcascade_frontalface_default.xml
+
+Step 3:
+
