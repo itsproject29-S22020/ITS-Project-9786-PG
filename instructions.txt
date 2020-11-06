@@ -5,8 +5,8 @@ Use with times.txt file.
 
 Edit filepaths in code to appropriate file paths. 
 Edit video timestamps to subclip files from in seconds
-E.g. to subclip video from 00:00:00 to 00:00:15: 
-subclipTimes.write("0-10") -> subclipTimes.write("0-15")
+E.g. to subclip video from 00:00:00 to 00:01:15: 
+subclipTimes.write("0-10") -> subclipTimes.write("0-75")
 
 Step 2:
 
