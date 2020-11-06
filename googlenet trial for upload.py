@@ -140,3 +140,50 @@ model_accuracy_check(trainLoader, model)
 
 print("The Testing Set Accuracy:")
 model_accuracy_check(testLoader, model)
+
+
+
+'''
+# MAJOR CODING ERRORS: THE TRAINING & TESTING SETS WERE NOT ORGANIZED BY SUBJECTS, LEADING TO ABNORMALLY HIGH ACCURACIES 
+# Split the dataset into train and test set randomly with the ratio of train:test = 80:20
+# Load dataset with labels
+dataset = DepressionLabelled_Dataset(csvFile = 'labelled_dataset.csv', 
+                                     rootDir = 'faces_extracted', 
+                                     transform=torchvision.transforms.Compose([transforms.ToTensor(), norm]))
+                                     #transform = transforms.ToTensor())
+                                     #transform=torchvision.transforms.Compose([transforms.ToPILImage(),transforms.ToTensor()]))                                
+                                 
+ds_size = len(dataset)
+'''
+'''
+trainSize = int(0.8 * ds_size)
+testSize = ds_size - trainSize
+
+#trainSet, testSet = torch.utils.data.random_split(dataset,[10824, 2706])
+trainSet, testSet = torch.utils.data.random_split(dataset,[trainSize, testSize])
+
+trainLoader = torch.utils.data.DataLoader(dataset=trainSet, batch_size=batchSize, shuffle=True)
+testLoader = torch.utils.data.DataLoader(dataset=testSet, batch_size=batchSize, shuffle=True)
+
+torch.manual_seed(rnd_seed) # set the random seed
+'''
+'''
+# Using SubsetRandomSampler()
+test_split = 0.25
+indices = list(range(ds_size))
+splitVal = int(np.floor(test_split * ds_size))
+
+shuffle_ds = True
+if shuffle_ds:
+    np.random.seed(rnd_seed)
+    np.random.shuffle(indices)
+
+
+train_ind, test_ind = indices[splitVal:], indices[:splitVal]
+
+trainSampler = SubsetRandomSampler(train_ind)
+testSampler = SubsetRandomSampler(test_ind)
+
+  trainLoader = torch.utils.data.DataLoader(dataset, batch_size=batchSize, sampler=trainSampler)
+testLoader = torch.utils.data.DataLoader(dataset, batch_size=batchSize, sampler=testSampler)
+'''
