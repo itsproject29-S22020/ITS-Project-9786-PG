@@ -21,4 +21,4 @@ Turn video files into images, using Haar cascades face detection crop faces from
 
 Specifications:
 Python 3.7
-
+torch version 1.6
