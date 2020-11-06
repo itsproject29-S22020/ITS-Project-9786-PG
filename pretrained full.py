@@ -109,7 +109,7 @@ model.fc = nn.Sequential(
     nn.Sigmoid())
 
 # Loss and Optimizer Function
-criterion = nn.BCELoss()
+criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr = learningRate)
 
 train_list = {"Loss" : [], "Accuracy" : []}
