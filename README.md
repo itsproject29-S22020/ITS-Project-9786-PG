@@ -1,13 +1,13 @@
 # ITS-Project-9786-PG
-DEPRESSION ANALYSIS OF FACIAL VIDEO DATA USING DEEP LEARNING
-UNIT 9786 PG: ITS CAPSTONE PROJECT - UNIVERSITY OF CANBERRA
-ITS PROJECT 29-S2: Depression Analysis from Facial Video Data via Deep Learning
+Depression Analysis of Facial Video Data using Deep Learning
+Unit 9786 PG: ITS Capstone Project - University of Canberra
+Its project 29-S2: Depression Analysis from Facial Video Data via Deep Learning
 
-DATE SUBMITTED: 6 NOV 2020
+Date submitted: 6 NOV 2020
 
-DATE LAST UPDATED: 6 NOV 2020
+Date last updated: 6 NOV 2020
 
-PROJECT TEAM MEMBERS:
+Project team members:
 	Hang Hoang - u3197442
  	Charmane Foo - u3201698
  	Matt Lally - u3167761
