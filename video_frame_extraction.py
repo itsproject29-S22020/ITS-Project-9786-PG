@@ -9,6 +9,7 @@
 import os
 import moviepy
 import cv2
+import shutil
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from glob import glob
 
