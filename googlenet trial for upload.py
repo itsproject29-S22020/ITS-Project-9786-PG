@@ -56,7 +56,7 @@ input_channels = 3
 no_classes = 2
 learningRate = 0.000001
 batchSize = 16
-no_epochs = 5
+no_epochs = 20
 rnd_seed = 35
 
 #normalise the images inline with GoogLeNet requirements
