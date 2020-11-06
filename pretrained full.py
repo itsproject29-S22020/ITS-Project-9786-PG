@@ -53,7 +53,7 @@ input_channels = 3
 no_classes = 2
 learningRate = 0.00001
 batchSize = 32
-no_epochs = 15
+no_epochs = 20
 rnd_seed = 42
 
 
@@ -103,6 +103,7 @@ torch.manual_seed(rnd_seed) # set the random seed
 model = torchvision.models.resnet50(pretrained=True)
 model.to(device)
 
+# modify the fully connected layer of the network
 model.fc = nn.Sequential(
     nn.Linear(2048, 1, bias = True),
     nn.Sigmoid())
@@ -202,7 +203,7 @@ def compute_test(testLoader, best_test_acc):
 # Save the best model:
     if eAccuracy > best_test_acc:
         best_test_acc = eAccuracy
-        torch.save(model.state_dict(), "best_model_resnet50.pth")
+        torch.save(model.state_dict(), "best_resnet50.pth")
         
     return eLoss, eAccuracy, best_test_acc
 
@@ -237,8 +238,8 @@ plt.show()
 
 # Loss
 plt.title("Overall Training & Testing Loss")    
-plt.plot(np.arrange(1, 11, 1), train_list["loss"], color = 'red')
-plt.plot(np.arrage(1, 11, 1), test_list["loss"], color = 'blue')
+plt.plot(np.arrange(1, 21, 1), train_list["loss"], color = 'red')
+plt.plot(np.arrage(1, 21, 1), test_list["loss"], color = 'blue')
 plt.xlabel("Number of Epochs")
 plt.ylabel("Loss")
 plt.show()
