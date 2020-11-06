@@ -64,14 +64,20 @@ norm = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                             std=[0.229, 0.224, 0.225])
 
 # Load dataset with labels, split between trainset and testset
+# Attempt data augmentation
 trainSet = DepressionLabelled_Dataset(csvFile = 'C:\\Users\\TechFast Australia\\Desktop\\blank\\train_labels.csv', 
                                      rootDir = 'C:\\Users\\TechFast Australia\\Desktop\\blank\\train_set', 
-                                     transform=torchvision.transforms.Compose([transforms.ToTensor(), norm]))
-                                     #transform = transforms.ToTensor())
-                                     #transform=torchvision.transforms.Compose([transforms.ToPILImage(),transforms.ToTensor()]))
+                                     transform=torchvision.transforms.Compose([
+                                         #transforms.Resize(256), # resize the image to 256x256
+                                         #transforms.CenterCrop(224), # crop the image 224x224 about the centre
+                                         transforms.ToTensor(), norm]))
+                                     
 testSet = DepressionLabelled_Dataset(csvFile = 'C:\\Users\\TechFast Australia\\Desktop\\blank\\test_labels.csv', 
                                      rootDir = 'C:\\Users\\TechFast Australia\\Desktop\\blank\\test_set', 
-                                     transform=torchvision.transforms.Compose([transforms.ToTensor(), norm]))
+                                     transform=torchvision.transforms.Compose([
+                                         #transforms.Resize(256), # resize the image to 256x256
+                                         #transforms.CenterCrop(224), # crop the image 224x224 about the centre
+                                         transforms.ToTensor(), norm]))
                                     
                                  
 #ds_size = len(dataset)
