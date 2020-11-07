@@ -17,6 +17,7 @@ Use with haarcascade_frontalface_default.xml
 Step 3: 
 Load the two separate folders of train & test sets into the googlenet trial for upload.py file by changing the directory of both the image files and the .csv file of labels
 
+Note: The train dataset is too large to be uploaded in one file so it was uploaded in 7 parts. 
 
 #### OTHER UNSUCCESSFUL ATTEMPTS:
 alexnet_pytorch_trial -> Develop an algorithm that loads the pre-trained AlexNet model from PyTorch and classifies the images on two classes 0 and 1. However, the two major errors  found which were SSL Error and Epoch hangup were discussed in the report.
