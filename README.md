@@ -25,3 +25,15 @@ OS: Windows-10-10.0.19041-SP0
 Command: 
 CPU: conda install pytorch torchvision torchaudio cpuonly -c pytorch
 GPU: conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+
+GPU specs used for testing: 
+GPU: Nvidia 2080. 
+NVIDIA CUDA® Cores: 2944
+RTX-OPS: 57T
+Giga Rays/s: 8
+Boost Clock (MHz): 1710
+Base Clock (MHz): 1515
+Memory Speed: 14 Gps
+Standard Memory Config: 8 GB GDDR6
+Memory Interface Width: 256-bit
+Memory Bandwidth (GB/sec): 448 GB/s
